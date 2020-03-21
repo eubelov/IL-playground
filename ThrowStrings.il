@@ -14,15 +14,13 @@
         catch [mscorlib]System.Exception
         {
             stloc.0
-            ldstr   "Cought Exception"
+            ldstr   "Caught an Exception"
             call    void [mscorlib]System.Console::Write(class System.String)
             leave.s exit
         }
         catch System.String
         {
-            stloc.0
-            ldstr    "Cought String"
-            call    void [mscorlib]System.Console::Write(class System.String)
+			call    void [mscorlib]System.Console::Write(class System.String)
             leave.s exit
         }
  
